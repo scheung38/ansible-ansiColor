@@ -7,7 +7,7 @@ agent any
             steps {
                 ansiColor('xterm') {
                  ansiblePlaybook(
-                     playbook: './playbook.yml',
+                     playbook: 'playbook.yml',
                      colorized: true)
                 }
             }
