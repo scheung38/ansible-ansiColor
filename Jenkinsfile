@@ -7,8 +7,8 @@ agent any
             steps {
                 ansiColor('xterm') {
                  ansiblePlaybook(
-                     playbook: 'playbook.yml',
-                     inventory: 'inventory.ini',
+                     playbook: './playbook.yml',
+                     inventory: './inventory.ini',
                      colorized: true)
                 }
             }
