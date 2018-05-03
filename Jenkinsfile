@@ -5,11 +5,14 @@ pipeline {
         stages {
             stage('Example Build') {
                 steps {
-                    ansiColor('xterm') {
-                     ansiblePlaybook(
-                         playbook: "playbook.yml",
-                         colorized: true)
+                    node {
+                        ansiColor('xterm') {
+                         ansiblePlaybook(
+                             playbook: "playbook.yml",
+                             colorized: true)
+                        }
                     }
+
                 }
             }
         }
