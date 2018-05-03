@@ -7,7 +7,7 @@ pipeline {
                 steps {
                     ansiColor('xterm') {
                      ansiblePlaybook(
-                         playbook: "/Users/miriam-z/.jenkins/workspace/ansiColor/playbook.yml",
+                         playbook: "${ANSIBLE_DATA_PATH}/playbooks/playbook.yml",
                          colorized: true)
                     }
                 }
